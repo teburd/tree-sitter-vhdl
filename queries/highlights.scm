@@ -551,18 +551,19 @@
         (_)
         (_) @error.illegal.discrete_range)))
 
+; FIXME integer node not valid
 ; String subtypes shall be indexed by positive numbers
-(subtype_indication
-  (type_mark
-    (simple_name) @_t
-    (#eq? @_t "string"))
-  (array_constraint
-    (index_constraint
-      (_
-        (simple_expression
-          (integer_decimal
-            (integer) @error.illegal.index.zero @_l
-            (#eq? @_l "0")))))))
+;(subtype_indication
+;  (type_mark
+;    (simple_name) @_t
+;    (#eq? @_t "string"))
+;  (array_constraint
+;    (index_constraint
+;      (_
+;        (simple_expression
+;          (integer_decimal
+;            (integer) @error.illegal.index.zero @_l
+;            (#eq? @_l "0")))))))
 
 (subtype_indication
   (type_mark
