@@ -606,3 +606,75 @@
  (#not-eq? @_h @_t))
 ; }}}
 
+(comment) @comment
+
+; Keywords
+[
+  "library"
+  "use"
+  "entity"
+  "architecture"
+  "is"
+  "begin"
+  "end"
+  "in"
+  "out"
+  "inout"
+  "process"
+  "signal"
+  "generic"
+  "port"
+  "map"
+  "function"
+  "procedure"
+  "generate"
+  "range"
+  "record"
+  "subtype"
+] @keyword
+
+[
+  "in"
+  "inout"
+  "out"
+  "buffer"
+  "linkage"
+] @attribute
+
+[ "if"
+  "elsif"
+  "then"
+] @keyword.control.conditional
+
+[
+  "for"
+] @keyword.repeat
+
+[
+  "or"
+  "and"
+  "is"
+  "not"
+  "in"
+  "to"
+] @keyword.operator
+
+; Operators
+[
+  "<="
+  "=>"
+] @operator
+
+[
+  ";"
+  ","
+] @punctuation.delimiter
+
+[
+  "("
+  ")"
+  "'"
+] @punctuation.bracket
+
+(full_type_declaration "type" name: (identifier) @type)
+(signal_declaration "signal" (identifier_list) @variable)
