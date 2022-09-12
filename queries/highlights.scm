@@ -622,6 +622,9 @@
   "inout"
   "process"
   "signal"
+  "constant"
+  "shared"
+  "variable"
   "generic"
   "port"
   "map"
@@ -639,7 +642,7 @@
   "out"
   "buffer"
   "linkage"
-] @attribute
+ ] @attribute
 
 [ "if"
   "elsif"
@@ -678,3 +681,6 @@
 
 (full_type_declaration "type" name: (identifier) @type)
 (signal_declaration "signal" (identifier_list) @variable)
+(variable_declaration "variable" (identifier_list) @variable)
+(constant_declaration "constant" (identifier_list) @variable)
+
