@@ -646,6 +646,7 @@
 
 [ "if"
   "elsif"
+  "else"
   "then"
 ] @keyword.control.conditional
 
